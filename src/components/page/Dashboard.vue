@@ -97,13 +97,13 @@ export default {
 		navigateToBar2() {
 			this.$router.push('/bar2');
 		},
-		changeDate() {
+		/* changeDate() {
 			const now = new Date().getTime();
 			this.data.forEach((item, index) => {
 				const date = new Date(now - (6 - index) * 86400000);
 				item.name = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
 			});
-		},
+		}, */
 		goToEditToDoPage() {
 			console.log('This will goto TODO list panel');
 			this.$router.push({ path: '/todo' });
